@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kopo.poly.EurekaServerApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-09-11T02:12:11" hostname="DESKTOP-3IV1L6U" time="0.955">
+  <properties/>
+  <testcase name="contextLoads()" classname="kopo.poly.EurekaServerApplicationTests" time="0.955"/>
+  <system-out><![CDATA[11:12:07.172 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [kopo.poly.EurekaServerApplicationTests]: EurekaServerApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+11:12:07.319 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration kopo.poly.EurekaServerApplication for test class kopo.poly.EurekaServerApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.3)
+
+2024-09-11T11:12:09.113+09:00  INFO 18128 --- [EUREKA-SERVER] [    Test worker] kopo.poly.EurekaServerApplicationTests   : Starting EurekaServerApplicationTests using Java 17.0.10 with PID 18128 (started by data8316-16 in C:\SpringMSA\EurekaServer)
+2024-09-11T11:12:09.114+09:00  INFO 18128 --- [EUREKA-SERVER] [    Test worker] kopo.poly.EurekaServerApplicationTests   : No active profile set, falling back to 1 default profile: "default"
+2024-09-11T11:12:11.362+09:00  INFO 18128 --- [EUREKA-SERVER] [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 0 endpoints beneath base path '/actuator'
+2024-09-11T11:12:11.457+09:00  INFO 18128 --- [EUREKA-SERVER] [    Test worker] kopo.poly.EurekaServerApplicationTests   : Started EurekaServerApplicationTests in 3.916 seconds (process running for 5.524)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

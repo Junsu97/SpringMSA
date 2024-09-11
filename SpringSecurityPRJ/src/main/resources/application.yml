@@ -22,7 +22,7 @@ spring:
     show-sql: true
     open-in-view: false
   application:
-    name: SpringSecurityPRJ
+    name: SPRING-SECURITY-PRJ
   datasource:
     password: 1234
     driver-class-name: org.mariadb.jdbc.Driver
@@ -45,3 +45,28 @@ jwt:
 
 server:
   port: 11000
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+management:
+  server:
+    port: 11001
+    address: localhost
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+  endpoint:
+    health:
+      enabled: true
+      show-details: always
+    beans:
+      enabled: true
+    info:
+      enabled: true
+

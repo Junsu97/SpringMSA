@@ -22,13 +22,51 @@ spring:
     show-sql: true
     open-in-view: false
   application:
-    name: SpringSecurityPRJ
+    name: SPRING-SECURITY-PRJ
   datasource:
     password: 1234
     driver-class-name: org.mariadb.jdbc.Driver
     username: poly
     url: jdbc:mariadb://192.168.183.136:3306/myDB
 
+jwt:
+  token:
+    creator: poly
+    access:
+      valid:
+        time: 300
+      name: jwtAccessToken
+    refresh:
+      valid:
+        time: 3000
+      name : jwtRefreshToken
+  secret:
+    key: '123456789123456789123456789123456789'
 
 server:
   port: 11000
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+management:
+  server:
+    port: 11001
+    address: localhost
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+  endpoint:
+    health:
+      enabled: true
+      show-details: always
+    beans:
+      enabled: true
+    info:
+      enabled: true
+
